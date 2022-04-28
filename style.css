@@ -1,0 +1,161 @@
+/*
+Overall, I wanted a blue theme with easy-to-read font and colors, many of my decisions were made with that in mind.
+*/
+
+/* 
+I started with "body" because I wanted to adjust and normalize all of the content's width and text alignment
+*/
+body {
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    background: #0E0E52;
+}
+
+/*
+I worked on "header" next to have a box at the top and give enough "breathing room" so the top of the box isn't touching the top of the page
+*/
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 10px;
+    background: #449dd1;
+    border-radius: 25px;
+    margin-top: 30px;
+    height: 90px;
+}
+
+/*
+I did "nav" next to give room at the bottom of my nav bar to separate it from the articles
+*/
+nav {
+    margin-bottom: 25px;
+}
+
+/*
+I wanted all of the main content to be contained within a single box with rounded corners, the padding is there to ensure the top of my photo and the bottom of the main do not directly touch the top and bottom borders.
+*/
+main {
+    background: #449dd1;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+/*
+I adjusted h1 to be bold and have a separate font from the main content to make it appear differently from the rest of it.
+*/
+h1 {
+    font-style: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+
+}
+
+/*
+Like h1, I adjusted h2 to look different, but have a smaller font size than the title, as a subtitle.
+*/
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+/*
+I wanted to make sure my articles had a clear separation between them, so I decided to use a big bright font with an underline.
+*/
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    word-spacing: 5px;
+    text-decoration: underline;
+    color:aliceblue
+}
+
+/*
+I wanted to use a different font from the other headers for h4, because it's just a "caption" for my personal photo.
+*/
+h4 {
+    color: white;
+}
+
+/*
+For "p" I decied to have it align left instead of right because I think it's more professional than having everything aligned to the center. I also made sure to adjust the left and right margins so the text isn't too close to the sides. I also adjusted the line-height higher so it's easier to read; the text looks too bunched together otherwise.
+*/
+p {
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: left;
+    line-height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+I wanted all my listed items to be indented a little more than the "p" content, but still remaining nearly the same.
+*/
+li {
+    text-align: left; 
+    margin-left: 45px;
+    margin-right: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+"div img" is here specifically to ensure my images within my div container are resized and fit on the page, in particular I wanted the images to be side-by-side and not be too large
+*/
+div img {
+    height: 300px;
+    width: 300px;
+}
+
+/* 
+The "footer" had its line-height adjusted so it takes less empty space at the bottom of the page.
+*/
+footer {
+    line-height: 0px;
+}
+
+/*
+This ".nav-btns" class is used to create separate buttons for the nav bar, kind of making it more unique than just text.
+*/
+.nav-btns {
+    color: darkblue;
+    background-color: #78C0E0;
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    height: 40px;
+}
+
+/*
+I used a caption class instead of just adjusting h4 in case I need h4 in different sections in the future. I wanted a different font and size than my usual headers, as well as for the caption to be directly below the photo so I use margin and to create some space I adjusted the padding-bottom.
+*/
+.caption {
+    margin: auto;
+    padding-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+/*
+I used the following pseudo-classes for the anchor elements to stylize my links
+*/
+a:link {
+color: blue
+}
+
+a:visited {
+color: black;
+}
+
+a:hover {
+color: lightblue
+}
+
+a:active {
+color: darkblue
+}
+
+/* I ended up not changing anything in "article" so it has been left out of the style sheet */

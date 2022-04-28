@@ -1,0 +1,128 @@
+<!-- DOCTYPE, <html>, and everything within the <head> and <body> sections are necessary-->
+<!DOCTYPE html>
+<html>
+
+<!-- The <head> tag is necessary for the page to know what to look at for presenting all the content-->
+<head>
+
+<!-- Necessary for data across the whole html page, "width=device-width" is particularly important for the page to be viewed by all shapes of devices-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+<!--Title is necessary for the text that appears on the open window/tab as well as on bookmarks-->
+  <title>Raimond Arcebido Portfolio</title>
+
+<!--This link is important for normalizing the format between browsers, which sometimes use their own, the others tell what the html file to connect to; css and js files-->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!-- The <body> is necessary for the actual content within-->
+<body>
+
+<!-- I used <header> here and <h1> and <h2> because it's at the top of the page and <h1> is the most important content for SEO; in this case my name so people can find it in search engines easier-->
+<header>
+
+<!-- Plain background with opposite color font for readability-->
+<!-- Centered name and containers overall to make the content easy to read-->
+<!-- Good font size for readability-->
+  <h1>Raimond Arcebido</h1>
+  <h2>Software Developer</h2>
+</header>
+
+<!-- Added <br> (line break) here for some space-->
+<br>
+
+<!-- Navigation bar for easy navigation linking to the ids-->
+<!-- Used the "nav-btns" class to have more style than plain text-->
+<nav>
+  <a href="#intro" class="nav-btns">Introduction</a> | 
+  <a href="#about" class="nav-btns">About</a> | 
+  <a href="#interests" class="nav-btns">Interests</a> | 
+  <a href="#contact" class="nav-btns">Contact</a>
+</nav>
+
+<!-- I used <main> here so I could have all of my info inside a box-->
+<main>
+
+  <!-- Separated main content by article so I could use id on each section for navigation-->
+  <article id="intro">
+
+  <!-- Picture of self -->
+  <img src="img/raimond.jpg" alt="A picture of Raimond">
+
+  <!-- I used <h4> with the class "caption" here instead of <h3> because it's just a caption-->
+  <h4 class="caption">Hello! My name is Raimond Arcebido!</h4>
+
+  <p>I am a software engineering student living in Orlando, Florida.
+  I am learning to become a software developer to work on projects that make our lives easier or more fun!
+  I often worked with others in my previous jobs and in my hobbies, it feels great to be part of a team!</p>
+
+</article>
+
+<!-- Added a horizontal ruler to separate content and make it look better-->
+<hr>
+
+<article id="about">
+  
+  <!--I used <h3> here because these headers are more important than captions for a photo-->
+  <h3>About Me</h3>
+  <p>After graduating university, I moved to Japan to become an English teacher, where I taught both children and adults. I learned the importance of working as a team to make our small schools a success, as well as understanding the needs of my students to provide them with exactly what they need. 
+  I am studying with Thinkful to change my career and become a software developer! So far, my journey into a new career has been very insightful and fun!</p>
+  
+</article>
+
+<hr>
+
+<article id="interests">
+  <h3>My Interests</h3>
+  <p>My main hobby is playing video games! A few games I play currently are:</p>
+
+  <!--I added an unordered list <ul> here because these games are not put in any particular order-->
+  <ul>
+    <li>Tetris 99</li>
+    <li>Apex Legends</li>
+    <li>Lost Ark</li>
+    <li>Genshin Impact</li>
+    <li>Elden Ring</li>
+  </ul>
+  <p>Ever since I was a kid, I've loved listening to Japanese music too! My top 3 artists are:</p>
+
+  <!--I used an ordered list here to display my favorites in order-->
+  <ol>
+    <li>Hoshimachi Suisei</li>
+    <li>Polkadot Stingray</li>
+    <li>LiSA</li>
+  </ol>
+  <p>I also love to draw and animate art; I've been drawing and animated since 2020. Here is a sample of my work:</p>
+
+  <!--Use div for my image-->
+  <!--I used div for my two images so I could assign maximum width and height to them (300x300) without affecting my image at the top, these .gif files are larger than 300x300-->
+  <div>
+  <img src="img/sample_art.gif" alt="Art Sample">
+  <img src="img/sample_anim.gif" alt="Animation Sample">
+  </div>
+</article>
+
+<hr>
+
+<article id="contact">
+  <h3>Contact Me</h3>
+
+  <!--These are links to my persona LinkedIn and GitHub pages-->
+  <a href="https://www.linkedin.com/in/raimond-arcebido-847559b9/">LinkedIn</a> | <a href="https://github.com/rai-arc">GitHub</a>
+</article>
+
+</main>
+
+<!--The main content is done, I'm at the bottom of the page and I did not want my copyright inside of the box so I used <footer> here -->
+  <footer>
+    <h5>©2022 Raimond Arcebido, All rights reserved.</h5>
+  </footer>
+</body>
+
+</html>
