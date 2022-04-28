@@ -79,6 +79,13 @@ h4 {
 }
 
 /*
+I need to change the color of the copyright information so it shows up better at the bottom.
+*/
+h5 {
+    color: white;
+}
+
+/*
 For "p" I decied to have it align left instead of right because I think it's more professional than having everything aligned to the center. I also made sure to adjust the left and right margins so the text isn't too close to the sides. I also adjusted the line-height higher so it's easier to read; the text looks too bunched together otherwise.
 */
 p {
