@@ -61,21 +61,21 @@ h2 {
 }
 
 /*
-I wanted to make sure my articles had a clear separation between them, so I decided to use a big bright font with an underline.
+I wanted to use a different font from the other headers for h3, because it's just a "caption" for my personal photo.
 */
 h3 {
+    color: rgb(0, 20, 37);
+}
+
+/*
+I wanted to make sure my articles had a clear separation between them, so I decided to use a dark font with an underline for contrast.
+*/
+h4 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
     word-spacing: 5px;
     text-decoration: underline;
-    color:aliceblue
-}
-
-/*
-I wanted to use a different font from the other headers for h4, because it's just a "caption" for my personal photo.
-*/
-h4 {
-    color: white;
+    color:rgb(0, 20, 37);
 }
 
 /*
@@ -104,14 +104,6 @@ li {
     margin-left: 45px;
     margin-right: 45px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-/*
-"div img" is here specifically to ensure my images within my div container are resized and fit on the page, in particular I wanted the images to be side-by-side and not be too large
-*/
-div img {
-    height: 300px;
-    width: 300px;
 }
 
 /* 
@@ -150,11 +142,11 @@ I used a caption class instead of just adjusting h4 in case I need h4 in differe
 I used the following pseudo-classes for the anchor elements to stylize my links
 */
 a:link {
-color: blue
+color: darkblue
 }
 
 a:visited {
-color: black;
+color: rgb(7, 0, 41);
 }
 
 a:hover {
@@ -162,7 +154,7 @@ color: lightblue
 }
 
 a:active {
-color: darkblue
+color: red
 }
 
 /* I ended up not changing anything in "article" so it has been left out of the style sheet */
