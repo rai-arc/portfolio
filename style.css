@@ -157,4 +157,9 @@ a:active {
 color: red
 }
 
+label {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 25px;
+}
 /* I ended up not changing anything in "article" so it has been left out of the style sheet */

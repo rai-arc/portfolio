@@ -43,7 +43,8 @@
   <a href="#intro" class="nav-btns">Introduction</a> | 
   <a href="#about" class="nav-btns">About</a> | 
   <a href="#interests" class="nav-btns">Interests</a> | 
-  <a href="#contact" class="nav-btns">Contact</a>
+  <a href="#socials" class="nav-btns">Socials</a> |
+  <a href="#contact" class="nav-btns">Contact Me</a>
 </nav>
 
 <!-- I used <main> here so I could have all of my info inside a box-->
@@ -102,11 +103,33 @@
 
 <hr>
 
+<article id="socials">
+  <h4>Socials</h4>
+
+  <!--These are links to my personal LinkedIn and GitHub pages-->
+  <a href="https://www.linkedin.com/in/raimond-arcebido-847559b9/">LinkedIn</a> | <a href="https://github.com/rai-arc">GitHub</a>
+</article>
+
+<hr>
+
 <article id="contact">
   <h4>Contact Me</h4>
 
-  <!--These are links to my persona LinkedIn and GitHub pages-->
-  <a href="https://www.linkedin.com/in/raimond-arcebido-847559b9/">LinkedIn</a> | <a href="https://github.com/rai-arc">GitHub</a>
+  <!--This is an email form for contacting me-->
+  <form>
+    <div>
+      <label for="name">Name:</label>
+      <input id="name" type="text" name="name" placeholder="Please enter your name"/>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" type="email" name="email" placeholder="Please enter your email" required/>
+    </div>
+    <div>
+      <label for="form-mesage">Your message:</label>
+      <textarea id="form-message" name="message" required maxlength="200" placeholder="How may I help you?"></textarea>
+    </div>
+  </form>
 </article>
 
 </main>
